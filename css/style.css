@@ -28,9 +28,17 @@ body{
     width: 350px;
     height: 100%;
     border-radius: 8%;
+    padding: 15px;
 }
 
 h1{
     font-family: 'Pattaya', sans-serif;
     font-size: 40px;
+}
+
+button{
+    padding: 6px;
+    border-radius: 10px;
+    font-family: 'Pattaya', sans-serif;
+
 }

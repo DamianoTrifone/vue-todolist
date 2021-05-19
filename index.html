@@ -17,7 +17,8 @@
         <div class="container">
             <h1>Cose da fare</h1>
             <div id="root">
-                <input type="text" placeholder="Inserisci qui il tuo nuovo promemoria" @keypress.enter="add" v-model= "newToDo">
+                <input type="text" placeholder="Inserisci qui il tuo promemoria" @keypress.enter="add" v-model= "newToDo">
+                <button @click="add" v-model="newToDo">Aggiungi alla lista</button>
                 <ul>
                     <li v-for="(item, index) in toDoList">
                     {{ item.toDo }}
