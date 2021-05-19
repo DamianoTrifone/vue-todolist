@@ -10,13 +10,27 @@ i{
 
 li{
     list-style: none;
+    font-family: 'Varela Round', sans-serif;
+    letter-spacing: 1px;
+}
+
+body{
+    background-image: url("../css/sfondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .container{
     text-align: center;
     margin-top: 15%;
-    margin-left: 35%;
-    background-color: cornflowerblue;
+    margin-left: 37%;
+    background-color: rgba(100, 149, 237, 0.8);
     width: 350px;
     height: 100%;
+    border-radius: 8%;
+}
+
+h1{
+    font-family: 'Pattaya', sans-serif;
+    font-size: 40px;
 }
