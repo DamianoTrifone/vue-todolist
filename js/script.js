@@ -10,31 +10,37 @@
 // Quando un elemento ha la proprietà "completed" settata a true, il testo corrispondente sarà mostrato barrato (esisterà una proprietà CSS per ottenere questo effetto???).
 
 var app = new Vue({
-    el: "#root",
-    data: {
+  el: "#root",
+  data: {
     // Array contenente le cose da fare
-        toDoList: [
-          {toDo: 'Lavare la macchina',
-          completed: false},
+    toDoList: [
+      {toDo: 'Lavare la macchina',
+      completed: false},
 
-          {toDo: 'Portare il cane dal veterinario',
-          completed: false },
+      {toDo: 'Portare il cane dal veterinario',
+      completed: false },
 
-          {toDo: 'Pagare le bollette',
-          completed: false },
+      {toDo: 'Pagare le bollette',
+      completed: false },
 
-          {toDo: 'Andare in palestra',
-          completed: false },
+      {toDo: 'Andare in palestra',
+      completed: false },
 
-          {toDo: 'Comprare la frutta',
-          completed: false }
-        ],
-        newToDo: ' '
-      },
-      
-      methods: {
-          remove: function (index){
-              this.toDoList.splice(index, 1);
-          }
-      }
-    });
+      {toDo: 'Comprare la frutta',
+      completed: false }
+    ],
+    newToDo: ' '
+  },
+  methods: {
+    remove: function (index){
+      this.toDoList.splice(index, 1);
+    },
+    add: function (event){
+      const value = event.target.value;
+      this.toDoList.push({
+        toDo: value,
+        completed: false
+      });
+    }
+  }
+});

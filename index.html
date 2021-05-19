@@ -10,10 +10,11 @@
     </head>
     <body>
         <div id="root">
+            <input type="text" placeholder="Inserisci qui il tuo nuovo promemoria" @keypress.enter="add" v-model= "newToDo">
             <ul>
-                <li v-for="item in toDoList">
+                <li v-for="(item, index) in toDoList">
                   {{ item.toDo }}
-                  <i class="far fa-trash-alt" @click="remove"></i>
+                  <i class="far fa-trash-alt" @click="remove(index)"></i>
                 </li>
               </ul>
         </div>
