@@ -1,0 +1,22 @@
+*{
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+i{
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+}
+
+.container{
+    text-align: center;
+    margin-top: 15%;
+    margin-left: 35%;
+    background-color: cornflowerblue;
+    width: 350px;
+    height: 100%;
+}
