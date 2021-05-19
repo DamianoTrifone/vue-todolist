@@ -9,9 +9,11 @@
     </head>
     <body>
         <div id="root">
-            <li>
-                <ol> {{ toDoList.toDo }} </ol>
-            </li>
+            <ul>
+                <li v-for="item in toDoList">
+                  {{ item.toDo }}
+                </li>
+              </ul>
         </div>
 
         <script src="js/script.js"></script>

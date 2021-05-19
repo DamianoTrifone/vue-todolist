@@ -12,11 +12,21 @@
 var app = new Vue({
     el: "#root",
     data: {
-        toDoList: {
-        toDo: "fare la spesa",
-        completed: false
-        },
-    }
-});
+        toDoList: [
+          {toDo: 'Lavare la macchina',
+          completed: false},
 
-console.log(this.data);
+          {toDo: 'Portare il cane dal veterinario',
+          completed: false },
+
+          {toDo: 'Pagare le bollette',
+          completed: false },
+
+          {toDo: 'Andare in palestra',
+          completed: false },
+
+          {toDo: 'Comprare la frutta',
+          completed: false }
+        ]
+      }
+    });
