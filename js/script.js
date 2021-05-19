@@ -12,6 +12,7 @@
 var app = new Vue({
     el: "#root",
     data: {
+    // Array contenente le cose da fare
         toDoList: [
           {toDo: 'Lavare la macchina',
           completed: false},
@@ -27,6 +28,13 @@ var app = new Vue({
 
           {toDo: 'Comprare la frutta',
           completed: false }
-        ]
+        ],
+        newToDo: ' '
+      },
+      
+      methods: {
+          remove: function (index){
+              this.toDoList.splice(index, 1);
+          }
       }
     });
